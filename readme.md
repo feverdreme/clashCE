@@ -15,7 +15,7 @@ Run these lines
 ```bash
 docker build -t clashce .
 docker run --name clashComp clashce
-docker cp clashComp:/app/bin/ bin/
+docker cp clashComp:/app/bin/ .
 docker rm clashComp
 ```
 
