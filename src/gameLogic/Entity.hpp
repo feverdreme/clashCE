@@ -10,8 +10,10 @@ public:
     Entity();
     Entity(int posx, int posy): posx(posx), posy(posy) {}
 
-    void draw();
-    void update();
+    virtual void draw() = 0;
+    virtual void update() = 0;
+
+    virtual ~Entity() = default;
 };
 
 #endif
