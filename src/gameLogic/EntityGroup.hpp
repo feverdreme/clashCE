@@ -27,8 +27,12 @@ private:
 
     void allocate(int numEntries){
         size += numEntries;
-        
-        Entity** newgroup = new Entity*[size];
+
+        // new[] is broken currently        
+        // Entity** newgroup = new Entity*[size]; 
+
+        Entity** newgroup = reinterpret_cast<Entity**>(new char[size * sizeof(Entity*)]);
+
         memcpy(newgroup, group, used * sizeof(Entity*));
         
         delete[] group;
@@ -37,7 +41,8 @@ private:
 
 public:
     DynamicEntityGroup(int alloc){
-        group = new Entity*[alloc];
+        // group = new Entity*[alloc];
+        group = reinterpret_cast<Entity**>(new char[alloc * sizeof(Entity*)]);
         size = alloc;
     }
 
