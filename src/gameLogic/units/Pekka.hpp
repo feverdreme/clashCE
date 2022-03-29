@@ -1,6 +1,6 @@
-#include <graphx.h>
+#include <gfx.h>
 
-#include "../../gfx/gfx.h"
+#include "../gfx/gfx.h"
 #include "../Entity.hpp"
 
 class Pekka : public Entity {

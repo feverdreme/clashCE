@@ -1,4 +1,4 @@
-#include <graphx.h>
+#include <gfx.h>
 
 #ifndef ENTITY_D
 #define ENTITY_D
