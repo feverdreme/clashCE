@@ -1,4 +1,5 @@
 #include <string.h>
+#include <../Entity.hpp>
 
 // template <size_t size>
 // class EntityGroup {

@@ -1,5 +1,4 @@
-#include <tice.h>
-#include <graphx.h>
+#include <gfx/gfx.h>
 
 #include "gfx/gfx.h"
 
